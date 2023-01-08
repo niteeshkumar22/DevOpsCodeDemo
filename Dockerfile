@@ -1,3 +1,3 @@
 FROM tomcat
 ADD /target/addressbook.war /usr/local/tomcat/webapps/
-CMD ["catalina.sh","run","./bin/startup.sh"]
+CMD ["catalina.sh","run","sh","-c","startup.sh"]
