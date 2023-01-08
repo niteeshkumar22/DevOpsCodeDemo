@@ -1,3 +1,2 @@
-FROM tomcat
-ADD /target/addressbook.war /usr/local/tomcat/webapps/
-CMD ["/bin/bash","-c","./startup.sh"]
+FROM nginx
+echo "Hello Pradeep" > /usr/share/nginx/html/index.html
